@@ -17,7 +17,7 @@ const AttendanceReport = () => {
       }
 
       const response = await axios.get(
-        `http://localhost:3000/api/attendance/report?${query.toString()}`,
+        `https://employee-api-sable.vercel.app/api/attendance/report?${query.toString()}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
